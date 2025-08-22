@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="mk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <!-- SEO Meta -->
+    <title data-i18n="seo.title">Етно-туризам Калин Камен | Kalin Kamen</title>
+    <meta name="description" content="Истражете патеки, културно наследство и сместување во Калин Камен, Крива Паланка." data-i18n="seo.description" data-i18n-attr="content" />
+    <meta name="keywords" content="планинарење, Калин Камен, Крива Паланка, етно-туризам, Северна Македонија, планински патеки, природа" data-i18n="seo.keywords" data-i18n-attr="content" />
+    <meta name="image" content="https://etno-ks.mk/img/jezero_kk_1024.jpg" data-i18n="seo.image" data-i18n-attr="content" />
+
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Етно-туризам и пешачење – Калина Камен, Крива Паланка" data-i18n="og.title" data-i18n-attr="content" />
+    <meta property="og:description" content="Откријте живописни патеки и културно наследство околу Калин Камен во Крива Паланка." data-i18n="og.description" data-i18n-attr="content" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://etno-ks.mk/?lang=mk" data-i18n="og.url" data-i18n-attr="content"/>
+    <meta property="og:image" content="https://etno-ks.mk/img/jezero_kk_1024.jpg" />
+    <meta property="og:locale" content="mk_MK" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/jezero_kk" />
+        
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Етно-туризам и пешачење – Калина Камен, Крива Паланка" data-i18n="twitter.title" data-i18n-attr="content" />
+    <meta name="twitter:description" content="Истражете ги планинарските патеки и етно-туризмот на Калин Камен во Крива Паланка." data-i18n="twitter.description" data-i18n-attr="content" />
+    <meta name="twitter:image" content="https://etno-ks.mk/img/jezero_kk_1024.jpg" />
+
+    <!-- JSON-LD Structured Data -->
+    <script id="ld-json" type="application/ld+json" data-i18n="jsonld.touristDestination" data-i18n-attr="text">
+    {
+      "@context": "https://schema.org",
+      "@type": "touristDestination",
+      "name": "Калин Камен",
+      "description": "Планинска дестинација во Крива Паланка, Северна Македонија",
+      "image": "https://etno-ks.mk/img/jezero_kk_1024.jpg",
+      "url": "https://etno-ks.mk/?lang=en",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.206,
+        "longitude": 22.337
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. 1",
+        "addressLocality": "Крива Паланка",
+        "addressCountry": "MK"
+      }
+    }
+    </script>
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="fav/android-icon-192x192.png">
+    <!-- Modern PNG fallback -->
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
+    <!-- Android/Chrome -->
+    <link rel="manifest" href="fav/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Standard favicon -->
+    <link rel="icon" href="fav/favicon.ico" type="image/x-icon">
+    <!-- Modern PNG fallback -->
+    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <!-- Safari pinned tab -->
+    <link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#5bbad5">
+    <!-- Theme color for mobile address bar -->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Styles & Scripts & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+
+    <!-- removes ?lang= -->
+<!--<script>
+  window.addEventListener('load', () => {
+    const p = new URLSearchParams(location.search);
+    if (!p.has('lang')) return;
+
+    const lang = p.get('lang');
+    localStorage.setItem('selectedLang', lang);
+
+    // Delay URL cleanup until layout is stable
+    requestAnimationFrame(() => {
+      const scrollY = window.scrollY;
+      history.replaceState(null, '', location.pathname + location.hash);
+      window.scrollTo(0, scrollY);
+    });
+  });
+</script> -->
+
+  </head>
+
+  <body>
+    <!-- TEMPLATE BANNER --
+    <template id="lang-banner-template">
+      <div id="lang-suggestion-banner" role="region" aria-label="Language suggestion" class="lang-banner">
+        <div class="lang-banner-content">
+          <span class="lang-banner-text strong" >
+            <span data-i18n="banner.text">Your browser is set to</span>
+            <span class="js-current-lang lang-pair">
+              <img class="js-flag-detected twemoji-banner-flag" alt="" />
+              <span class="js-abbr-detected lang-code"></span>
+            </span>
+            <strong class="js-current-lang"></strong>.
+            Switch to 
+            <span class="lang-choice lang-pair">
+              <img class="js-flag twemoji-banner-flag" />
+              <span class="js-new-lang lang-code"></span>
+            </span>
+            ?
+          </span>
+          <div class="lang-banner-buttons">
+            <button class="js-accept" data-i18n="banner.accept">Yes</button>
+            <button class="js-decline" data-i18n="banner.decline">No</button>
+          </div>
+        </div>
+      </div>
+    </template>
+    <-- TEMPLATE BANNER -->
+
+    <template id="lang-banner-template">
+  <div id="lang-suggestion-banner" role="region" aria-label="Language suggestion" class="lang-banner">
+    <div class="lang-banner-content">
+      <p class="lang-banner-text strong" style="font-size: clamp(0.84rem, 2vw, 1.05rem);"></p>
+      <!--<span class="js-current-lang lang-name"></span>
+      <span class="lang-choice lang-pair">
+        <span class="js-flag"></span>
+        <span class="js-new-lang lang-code"></span>-->
+      </span>
+      <div class="lang-banner-buttons">
+        <button class="js-accept"></button>
+        <button class="js-decline"></button>
+      </div>
+    </div>
+  </div>
+</template>
+
+    <!-- APP WRAPPER -->
+    <div id="app">
+      <!-- HEADER -->
+      <header>
+        <div class="header-inner">
+          <div class="brand">
+            <img src="img/logo.png" alt="Logo" class="logo" />
+            <h2 id="site-title" data-i18n="site.title">ETNO turizam</h2>
+          </div>
+
+          <div class="lang-selector" id="lang-selector" aria-label="Language selector">
+            <button class="lang-toggle" aria-haspopup="true" aria-expanded="false">
+              <span class="flag" id="current-flag">🌐</span>
+              <span class="abbr" id="current-abbr" data-i18n="lang.current">EN</span>
+              <span class="arrow">▾</span>
+            </button>
+            <ul class="lang-options" role="menu">
+              <li><a href="?lang=mk" role="menuitem"><span class="flag">🇲🇰</span> MK</a></li>
+              <li><a href="?lang=en" role="menuitem"><span class="flag">🇬🇧</span> EN</a></li>
+              <li><a href="?lang=fr" role="menuitem"><span class="flag">🇫🇷</span> FR</a></li>
+              <li><a href="?lang=de" role="menuitem"><span class="flag">🇩🇪</span> DE</a></li>
+            </ul>
+          </div>
+
+          <div class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+          </div>
+        </div>
+      </header>
+      <!-- HEADER -->
+
+      <!-- NAV DESKTOP -->
+      <nav>
+        <ul class="nav-links">
+          <li><a role="link" tabindex="0" data-scroll="preface" id="nav-home" data-i18n="nav.home"></a></li> <!-- needs css when using js for scroll -->
+          <!--<li><a href="javascript:void(0)" data-scroll="preface" id="nav-home" data-i18n="nav.home" role="link"></a></li> <-- does not css when using js for scroll kepp for reference -->
+          <li><a role="link" tabindex="0" data-scroll="legend" id="nav-legend" data-i18n="nav.about"></a></li>
+          <li><a role="link" tabindex="0" data-scroll="culture" id="nav-culture" data-i18n="nav.culture"></a></li>
+          <li><a role="link" tabindex="0" data-scroll="trails" data-i18n="nav.trails"></a></li>
+          <li><a role="link" tabindex="0" data-scroll="gallery" data-i18n="nav.gallery"></a></li>
+          <li><a role="link" tabindex="0" data-scroll="stays" data-i18n="nav.stays"></a></li>
+          <li><a role="link" tabindex="0" data-scroll="about_us" data-i18n="nav.about_us"></a></li>
+          <li><a role="link" tabindex="0" data-scroll="contact" data-i18n="nav.contact"></a></li>
+          <li><a role="link" tabindex="0" data-scroll="map-section" data-i18n="nav.map"></a></li>
+        </ul>
+      </nav>
+      <!-- NAV DESKTOP -->
+
+      <!-- SLIDER -->
+      <div class="slider">
+        <div class="slide active">
+          <img id="slide-img-1" src="img/jezero_kk_1024.jpg" alt="" loading="lazy" data-i18n="slider.alt.0" data-i18n-attr="alt" />
+          <div class="caption" id="caption-1" data-i18n="slider.caption.0"></div>
+        </div>
+        <div class="slide">
+          <img id="slide-img-2" src="img/kuhinja_kp_1024.jpg" alt="" loading="lazy" data-i18n="slider.alt.1" data-i18n-attr="alt" />
+          <div class="caption" id="caption-2" data-i18n="slider.caption.1"></div>
+        </div>
+        <div class="slide">
+          <img id="slide-img-3" src="img/manastir_kp_1024.jpg" alt="" loading="lazy" data-i18n="slider.alt.2" data-i18n-attr="alt" />
+          <div class="caption" id="caption-3" data-i18n="slider.caption.2"></div>
+        </div>
+      </div>
+      <!-- SLIDER -->
+
+      <!-- NAV MOBILE -->
+      <aside id="mobile-menu">
+        <ul>
+          <li><a role="link" tabindex="0" data-scroll="preface" id="nav-home" data-i18n="nav.home"></a></li> <!-- needs css when using js for scroll -->
+          <!-- <li><a href="javascript:void(0)" data-scroll="preface" id="nav-home" data-i18n="nav.home" role="link"></a></li> <-- does not css when using js for scroll kepp for reference -->
+          <li><a role="link" tabindex="0" data-scroll="legend" id="nav-about" data-i18n="nav.about"></a></li>
+          <li><a role="link" tabindex="0" data-scroll="culture" id="nav-culture" data-i18n="nav.culture"></a></li>
+          <li><a role="link" tabindex="0" data-scroll="trails" data-i18n="nav.trails"></a></li>
+          <li><a role="link" tabindex="0" data-scroll="gallery" data-i18n="nav.gallery"></a></li>
+          <li><a role="link" tabindex="0" data-scroll="stays" data-i18n="nav.stays"></a></li>
+          <li><a role="link" tabindex="0" data-scroll="about_us" data-i18n="nav.about_us"></a></li>
+          <li><a role="link" tabindex="0" data-scroll="contact" data-i18n="nav.contact"></a></li>
+          <li><a role="link" tabindex="0" data-scroll="map-section" data-i18n="nav.map"></a></li>
+        </ul>
+      </aside>
+      <!-- NAV MOBILE -->
+
+      <!-- MAIN -->
+      <!-- Remaining sections will follow the same pattern -->
+      <main>
+        <!-- PREFACE -->
+        <section id="preface" class="preface whispers">
+          <h2 id="preface-title" data-i18n="preface.title">Шепоти на Осогово</h2>
+          <p id="preface-p1" data-i18n="preface.p1">
+            Добредојдовте во Крива Паланка и Калин Камен...
+          </p>
+          <p id="preface-p2" data-i18n="preface.p2">
+            Етно-туризмот овозможува интимен поглед...
+          </p>
+        </section>
+        <!-- PREFACE -->
+
+        <!-- LEGEND -->
+        <section id="legend" class="legend  whispers">
+          <div class="legend-pair">
+            <div class="legend-text">
+              <h2 id="legend-title" data-i18n="legend.title">Природата и легендата заедно</h2>
+              <p id="legend-p1" data-align="align-1" data-i18n="legend.p1">Сместен во срцето...</p>
+              <!--<p id="legend-p2" data-i18n="legend.p2">Името „Калин“ потекнува...</p>
+              <p id="legend-p3" data-i18n="legend.p3">Заедно, <strong>Калин Камен</strong>...</p>
+              <p id="legend-p4" data-i18n="legend.p4">Заедно, <strong>Калин Камен</strong>...</p>-->
+              <h3 id="legend-subheading-1" data-i18n="legend.subheading.1">The Meaning of the Name</h3>
+              <p id="legend-p5" data-i18n="legend.p5">The name <strong>“Kalin”</strong>...</p>
+              <p id="legend-p6" data-i18n="legend.p6"><strong>“Kamen”</strong> simply means...</p>
+              <p id="legend-p7" data-i18n="legend.p7">Together, <strong>Kalin Kamen</strong>...</p>
+            </div>
+            <figure class="legend-image" id="img-1">
+              <img src="img/legend_01_1024.jpg" alt="Kalin Kamen peak in Osogovo" loading="lazy" data-i18n="legend.alt.0" data-i18n-attr="alt" />
+            </figure>
+          </div>
+
+          <div class="legend-pair">
+            <div class="legend-text">
+              <h2 id="legend-subheading-2" data-i18n="legend.subheading.2">Local Stories and Echoes of the Past</h2>
+              <p id="legend-p8" data-i18n="legend.p8">Another tale tells of a girl...</p>              
+              <h3 id="legend-subheading-3" data-align="align-2" data-i18n="legend.subheading.3">The Legend of Kalina</h3>
+              <p id="legend-p8" data-i18n="legend.p9">Another tale tells of a girl...</p>
+              <p id="legend-p9" data-i18n="legend.p10">The mountain was later named...</p>
+              <p id="legend-p10" data-i18n="legend.p11">Whether you believe in the legend...</p>
+            </div>
+            <figure class="legend-image" id="img-2">
+              <img src="img/legend_02_1024.jpg" alt="Kalin Kamen peak in Osogovo" loading="lazy" data-i18n="legend.alt.1" data-i18n-attr="alt" />
+            </figure>
+          </div>
+        </section>
+        <!-- LEGEND -->
+
+        <!-- CULTURE -->
+        <section id="culture" class="culture  whispers">
+          <h2 id="culture-title" data-i18n="culture.title.1"></h2>
+          <p id="culture-p1" data-i18n="culture.p1"></p>
+          <p id="culture-p2" data-i18n="culture.p2"></p>
+          <h3 id="culture-title" data-i18n="culture.title.2" style="padding-left: clamp(1.5em, 3vw, 4em);"></h3>
+          <ul style="list-style-type: disc; padding-left: clamp(2.5em, 5vw, 6em); font-size: 1.2em; margin-bottom: 1em; margin-top: -1em;">
+            <li data-i18n="culture.element_01"></li>
+            <li data-i18n="culture.element_02"></li>
+            <li data-i18n="culture.element_03"></li>
+            <li data-i18n="culture.element_04"></li>
+            <li data-i18n="culture.element_05"></li>
+            <li data-i18n="culture.element_06"></li>
+          </ul>
+        </section>
+        <!-- CULTURE -->
+
+        <!-- TRAILS -->
+        <section id="trails" class="trails  whispers">
+          <h2 id="trails-title" data-i18n="trails.title.1"></h2>
+          <p id="trails-p1" data-i18n="trails.p1"></p>
+          <h3 id="trails-title" data-i18n="trails.title.2">2</h3>
+          <p id="trails-p2" data-i18n="trails.p2"></p>
+          <h3 id="trails-title" data-i18n="trails.title.3">3</h3>
+          <p id="trails-p3" data-i18n="trails.p3"></p>
+          <h3 id="trails-title" data-i18n="trails.title.4">4</h3>
+          <p id="trails-p4" data-i18n="trails.p4"></p>
+          <h3 id="trails-title" data-i18n="trails.title.5">5</h3>
+          <p id="trails-p5" data-i18n="trails.p5"></p>
+        </section>
+        <!-- TRAILS -->
+
+        <!-- GALLERY -->
+        <section id="gallery" class=" whispers" aria-labelledby="gallery-title" lang="mk">
+          <h2 id="gallery-title" class="gallery-title" data-i18n="gallery.title" >Галерија</h2>
+          <!--<p class="gallery-subtitle">Нашите авантури во слики</p>-->
+          
+          <div class="gallery" role="item">
+
+            <figure class="gallery-item">
+              <img 
+                src="img/kk_01_1024.jpg" alt="Царев Врв – Калин Камен" loading="lazy" 
+                data-i18n="gallery.alt.01" data-i18n-attr="alt" lang="mk"/>
+              <figcaption 
+                id="gallery-caption-01" class="gallery-caption" data-i18n="gallery.caption.01" lang="mk">
+                Царев Врв – Калин Камен
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img 
+                src="img/ruen_1024.jpg" alt="Врв Руен" loading="lazy" 
+                data-i18n="gallery.alt.02" data-i18n-attr="alt" lang="mk"/>
+              <figcaption 
+                id="gallery-caption-02" class="gallery-caption" data-i18n="gallery.caption.02" lang="mk">
+                Врв Руен
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img 
+                src="img/suma_01_1024.jpg" alt="Мирна шума" loading="lazy" 
+                data-i18n="gallery.alt.03" data-i18n-attr="alt" lang="mk"/>
+              <figcaption 
+                id="gallery-caption-03" class="gallery-caption" data-i18n="gallery.caption.03" lang="mk">
+                Мирна шума
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img 
+                src="img/suma_02_1024.jpg" alt="Живописни пејзажи" loading="lazy" 
+                data-i18n="gallery.alt.04" data-i18n-attr="alt" lang="mk"/>
+              <figcaption 
+                id="gallery-caption-04" class="gallery-caption" data-i18n="gallery.caption.04" lang="mk">
+                Живописни пејзажи
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img 
+                src="img/meadows_01_1024.jpg" alt="Пасишта" loading="lazy" 
+                data-i18n="gallery.alt.05" data-i18n-attr="alt" lang="mk"/>
+              <figcaption 
+                id="gallery-caption-05" class="gallery-caption" data-i18n="gallery.caption.05" lang="mk">
+                Пасишта
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img 
+                src="img/meadows_02_1024.jpg" alt="Ливади во пролет" loading="lazy" 
+                data-i18n="gallery.alt.06" data-i18n-attr="alt" lang="mk"/>
+              <figcaption 
+                id="gallery-caption-06" class="gallery-caption" data-i18n="gallery.caption.06" lang="mk">
+                Ливади во пролет
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img 
+                src="img/nosnja_03_1024.jpg" alt="Национална носија" loading="lazy" 
+                data-i18n="gallery.alt.07" data-i18n-attr="alt" lang="mk"/>
+              <figcaption 
+                id="gallery-caption-07" class="gallery-caption" data-i18n="gallery.caption.07" lang="mk">
+                Национална носија
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img 
+                src="img/nosnja_02_1024.jpg" alt="Украси" loading="lazy" 
+                data-i18n="gallery.alt.08" data-i18n-attr="alt" lang="mk"/>
+              <figcaption 
+                id="gallery-caption-08" class="gallery-caption" data-i18n="gallery.caption.08" lang="mk">
+                Украси
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img 
+                src="img/remains_of_fortress_01_1024.jpg" alt="Остатоци од тврдината" loading="lazy" 
+                data-i18n="gallery.alt.09" data-i18n-attr="alt" lang="mk"/>
+              <figcaption 
+                id="gallery-caption-09" class="gallery-caption" data-i18n="gallery.caption.09" lang="mk">
+                Остатоци од тврдината
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img 
+                src="img/sv_Joakim_01_1024.jpg" alt="Манастир Св. Јоаким Осоговски" loading="lazy" 
+                data-i18n="gallery.alt.10" data-i18n-attr="alt" lang="mk"/>
+              <figcaption 
+                id="gallery-caption-10" class="gallery-caption" data-i18n="gallery.caption.10" lang="mk">
+                Манастир Св. Јоаким Осоговски
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img 
+                src="img/sv_Joakim_04_1024.jpg" alt="Ноќ над манастирот" loading="lazy" 
+                data-i18n="gallery.alt.11" data-i18n-attr="alt" lang="mk"/>
+              <figcaption 
+                id="gallery-caption-11" class="gallery-caption" data-i18n="gallery.caption.11" lang="mk">
+                Ноќ над манастирот
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img 
+                src="img/vodopad_02_1024.jpg" alt="Станечки водопади" loading="lazy" 
+                data-i18n="gallery.alt.12" data-i18n-attr="alt" lang="mk"/>
+              <figcaption 
+                id="gallery-caption-12" class="gallery-caption" data-i18n="gallery.caption.12" lang="mk">
+                Станечки водопади
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img 
+                src="img/nosnja_01_1024.jpg" alt="Традиционални мотиви" loading="lazy" 
+                data-i18n="gallery.alt.13" data-i18n-attr="alt" lang="mk"/>
+              <figcaption 
+                id="gallery-caption-13" class="gallery-caption" data-i18n="gallery.caption.13" lang="mk">
+                Традиционални мотиви
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img 
+                src="img/sv_Bogorodica_1024.jpg" alt="Црквата св. Богородица" loading="lazy" 
+                data-i18n="gallery.alt.14" data-i18n-attr="alt" lang="mk"/>
+              <figcaption 
+                id="gallery-caption-14" class="gallery-caption" data-i18n="gallery.caption.14" lang="mk">
+                Црквата св. Богородица
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img 
+                src="img/milk_pipeline_1024.jpg" alt="Млековод" loading="lazy" 
+                data-i18n="gallery.alt.15" data-i18n-attr="alt" lang="mk"/>
+              <figcaption 
+                id="gallery-caption-15" class="gallery-caption" data-i18n="gallery.caption.15" lang="mk">
+                Млековод
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img 
+                src="img/lokalno_stanovnistvo_1024.jpg" alt="Гостопримливи луѓе" loading="lazy" 
+                data-i18n="gallery.alt.16" data-i18n-attr="alt" lang="mk"/>
+              <figcaption 
+                id="gallery-caption-16" class="gallery-caption" data-i18n="gallery.caption.16" lang="mk">
+                Гостопримливи луѓе
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img 
+                src="img/simit_1024.jpg" alt="Кривопаланечки симит" loading="lazy" 
+                data-i18n="gallery.alt.17" data-i18n-attr="alt" lang="mk"/>
+              <figcaption 
+                id="gallery-caption-17" class="gallery-caption" data-i18n="gallery.caption.17" lang="mk">
+                Кривопаланечки симит
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img 
+                src="img/tradicionalna_jela_1024.jpg" alt="Богата трпеза" loading="lazy" 
+                data-i18n="gallery.alt.18" data-i18n-attr="alt" lang="mk"/>
+              <figcaption 
+                id="gallery-caption-18" class="gallery-caption" data-i18n="gallery.caption.18" lang="mk">
+                Богата трпеза
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img 
+                src="img/tradicionalna_hrana_01_1024.jpg" alt="Подготвено со љубов" loading="lazy" 
+                data-i18n="gallery.alt.19" data-i18n-attr="alt" lang="mk"/>
+              <figcaption 
+                id="gallery-caption-19" class="gallery-caption" data-i18n="gallery.caption.19" lang="mk">
+                Подготвено со љубов
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img 
+                src="img/tradicionalna_hrana_02_1024.jpg" alt="Традиционални јадења" loading="lazy" 
+                data-i18n="gallery.alt.20" data-i18n-attr="alt" lang="mk"/>
+              <figcaption 
+                id="gallery-caption-20" class="gallery-caption" data-i18n="gallery.caption.20" lang="mk">
+                Традиционални јадења
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img 
+                src="img/tradicionalna_hrana_03_1024.jpg" alt="Хедонизам" loading="lazy" 
+                data-i18n="gallery.alt.21" data-i18n-attr="alt" lang="mk"/>
+              <figcaption 
+                id="gallery-caption-21" class="gallery-caption" data-i18n="gallery.caption.21" lang="mk">
+                Хедонизам
+              </figcaption>
+            </figure>
+
+          </div>
+          
+        </section>
+        <!-- GALLERY -->
+
+        <!-- STAYS -->
+        <section id="stays" class="stays  whispers">
+          <h2 id="stays-title" data-i18n="stays.title.1"></h2>
+          <p id="stays-p1" data-i18n="stays.p1"></p>
+          <h3 id="stays-title" data-i18n="stays.title.2" style="padding-left: clamp(1.5em, 3vw, 4em);"></h3>
+          <ul style="list-style-type: circle; padding-left: clamp(2.5em, 5vw, 6em); font-size: 1.2em; margin-bottom: 1em; margin-top: -1em;">
+            <li data-i18n="stays.element_01"></li>
+            <li data-i18n="stays.element_02"></li>
+            <li data-i18n="stays.element_03"></li>
+            <li data-i18n="stays.element_04"></li>
+            <li data-i18n="stays.element_05"></li>
+            <li data-i18n="stays.element_06"></li>
+            <li data-i18n="stays.element_07"></li>
+          </ul>
+        </section>
+        <!-- STAYS -->
+
+        <!-- ABOUT_US -->
+        <section id="about_us" class="about_us  whispers">
+          <h2 id="about_us-title" data-i18n="about_us.title.1"></h2>
+          <p id="about_us-p1" data-i18n="about_us.p1"></p>
+          <!--<h3 id="about_us-title" data-i18n="about_us.title.2" style="padding-left: clamp(1.5em, 3vw, 4em);"></h3>-->
+          <ul style="list-style-type: disc; padding-left: clamp(2.5em, 5vw, 6em); font-size: 1.2em; margin-bottom: 1em; margin-top: -1em;">
+            <li data-i18n="about_us.element_01"></li>
+            <li data-i18n="about_us.element_02"></li>
+            <li data-i18n="about_us.element_03"></li>
+            <li data-i18n="about_us.element_04"></li>
+            <li data-i18n="about_us.element_05"></li>
+            <li data-i18n="about_us.element_06"></li>
+            <li data-i18n="about_us.element_07"></li>
+            <li data-i18n="about_us.element_08"></li>
+            <li data-i18n="about_us.element_09"></li>
+            <li data-i18n="about_us.element_10"></li>
+            <li data-i18n="about_us.element_11"></li>
+            <li data-i18n="about_us.element_12"></li>
+            <li data-i18n="about_us.element_13"></li>
+            <li data-i18n="about_us.element_14"></li>
+          </ul>
+        </section>
+        <!-- ABOUT_US -->
+
+        <!-- CONTACT -->
+        <section id="contact" class="content whispers">
+          <h2 id="contact-title" data-i18n="contact.title">Контакт</h2>
+          <p data-i18n="contact.p1">За резервации и информации:</p>
+          <span style="margin-left: 6em;">
+            <a href="tel:+38970983277" class="phone-link" lang="en">
+            <span class="icon" aria-hidden="true">
+              <i class="fa-solid fa-phone" style="transform: rotate(45deg);"></i>
+            </span>
+            <span class="number"> +389 70 983 277</span>
+          </a>
+          </span>
+          <span style="margin-left: 6em;">
+            <a href="mailto:office@etno-ks.mk" class="email-link">
+              <span class="icon" aria-hidden="true">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <span class="address"> office@etno-ks.mk</span>
+            </a>
+          </span>
+          <span style="margin-left: 6em;">
+            <span class="icon" aria-hidden="true">
+              <i class="fa-solid fa-road"></i>
+            </span>
+            <span class="text" data-i18n="contact.address_01"> ул. Св. Јоаким Осоговски бр. 232</span>
+          </span>
+          <span style="margin-left: 6em;">
+            <span class="icon" aria-hidden="true">
+              <i class="fa-solid fa-mountain-city"></i>
+            </span>
+            <span class="text" data-i18n="contact.address_02"> 1330 Крива Паланка</span>
+          </span>
+        </section>
+        <!-- CONTACT -->
+
+        <!-- MAP -->
+        <section id="map-section" class="map-section  whispers">
+          <h2 id="map-heading" class="map-heading" data-i18n="map.heading">Where We Hike: Kriva Palanka</h2>
+          <div class="map-wrapper">
+            <iframe
+              loading="lazy"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d47279.81292307437!2d22.352499752913356!3d42.21469453123243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2srs!4v1755199347194!5m2!1sen!2srs"
+              width="600"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </section>
+        <!-- MAP -->
+
+        <!-- LIGHTBOX -->
+        <div id="lightbox-overlay" hidden>
+          <button class="lb-close" aria-label="Close" >&times;</button>
+          <button class="lb-arrow lb-prev" aria-label="Previous" >&#10094;</button>
+          <!--<div class="lb-inner">
+            <img class="lb-img" src="" alt="" data-i18n="lightbox.alt" data-i18n-attr="alt" />
+            <div class="lb-caption" data-i18n="lightbox.caption"></div>
+          </div>-->
+          <div class="lb-inner">
+            <div class="lb-img-wrapper">
+              <img class="lb-img" src="" alt="" />
+            </div>
+            <div class="lb-caption" ></div>
+          </div>
+
+          <button class="lb-arrow lb-next" aria-label="Next" >&#10095;</button>
+        </div>
+        <!-- LIGHTBOX -->
+
+      </main>
+      <!-- MAIN -->
+
+      <!-- FOOTER -->
+      <footer id="footer-text" style="white-space: pre;" data-i18n="footer.text"></footer>
+      <!-- FOOTER -->
+
+    </div>
+    <!-- APP WRAPPER -->
+
+    <script src="js/main-1.js" defer></script>
+  </body>
+</html>
